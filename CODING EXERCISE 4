@@ -1,0 +1,32 @@
+package SelfProgramming;
+import java.util.Scanner;
+
+public class Exercise3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//// Generate a random number to be guessed
+
+	    int number = (int)(Math.random() * 11);
+	    int j;
+	    int i=-1;
+		Scanner scan = new Scanner(System.in);
+        System.out.println("Ini adalah sistem meneka number :)");
+		while (i != number ) {
+			System.out.println("Masukkan nombor antara 0 - 10");
+			j=scan.nextInt();
+			if (j == number) {
+				System.out.println("Tahniah !! No anda sama");
+			}
+			else if (j <= number) {
+				System.out.println("Maaf !! No anda terlalu rendah");
+			}
+			else {
+				System.out.println("Maaf !! No anda terlalu tinggi");
+			}
+		
+		}
+		
+	}
+
+}
