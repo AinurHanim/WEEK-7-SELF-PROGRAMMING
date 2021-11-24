@@ -1,0 +1,26 @@
+
+public class Exercise1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int k=20;
+		int j=20;
+		int m;
+		while (k > 10) {
+	        System.out.println("k = " + k);
+	          k--; 
+	    }
+		
+		do {
+			System.out.println("j = " + j);
+			j--;
+		}
+		while (j>10);
+		
+		for (m=20; m>10; m--) {
+			System.out.println("m = " + m);
+		}
+
+	}
+
+}
