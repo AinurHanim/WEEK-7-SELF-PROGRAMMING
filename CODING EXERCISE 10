@@ -1,0 +1,25 @@
+
+public class Exercise6whiledo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int age;
+		int counter=0;
+		int age1=0;
+		int totalage=0;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		while (counter<5)
+		{
+			System.out.println("Enter age : ");
+			age = scan.nextInt();	
+			counter++;
+			if(age>30)
+			{
+				System.out.println("Number of age greater than 30 is " + age);
+			}
+		}
+	}
+}
+
