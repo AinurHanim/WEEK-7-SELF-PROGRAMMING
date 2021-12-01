@@ -1,0 +1,55 @@
+package SelfProgramming;
+
+import java.util.Scanner;
+
+public class PassWebsite {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String password1;
+		char ch=0;
+		int i=0;
+		
+		
+		
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Create your own password");
+		System.out.println("Your password must have uppercase, lowercase , numbers and must contain 8 letters");
+		System.out.println("Please enter your password with 8 digits with combination of letters and numbers : ");
+		password1=scan.nextLine();
+		
+		
+		
+		if(password1.length()==8)
+		{
+			System.out.println("Please proceed....");
+			ch=password1.charAt(0);
+			
+			if ((ch>='A' && ch<='Z') ||  (ch>='0' && ch<='9'));
+			{ 
+				System.out.println("Your password is passed");
+			    System.out.println("You can register");
+			}}
+		    else if ((password1.length()!=8));
+			{
+				System.out.println("Your password cannot be accepted");
+			
+				System.out.println("Invalid password");
+			}
+		{
+		i=i++;
+		System.out.println("Please create another password : " );
+		password1=scan.nextLine();
+		
+		if(i>=3)
+		{
+			System.out.println("You have entered 3 times!!! Please try again in another time ");
+		}
+	}
+}
+		
+	}
+
+		
